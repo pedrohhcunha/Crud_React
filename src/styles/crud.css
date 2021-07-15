@@ -1,0 +1,168 @@
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--darkBlue);
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    position: relative;
+}
+.clientes{
+    width: 80%;
+}
+.clientes .top-area{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.clientes h1{
+    font-size: 2rem;
+    color: var(--blue);
+}
+.clientes .controls{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.clientes .controls .search-area{
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--white);
+    overflow: hidden;
+}
+.clientes .controls .search-area input{
+    width: 80%;
+    height: 100%;
+    padding: 0 20px;
+    color: var(--darkBlue);
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.clientes .controls .search-area button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    border: none;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .2s;
+}
+.clientes .controls > button{
+    height: 50px;
+    padding: 0 20px;
+    background-color: var(--blue);
+    border-radius: 25px;
+    border: none;
+    color: var(--white);
+    margin-left: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .2s;
+    outline: none;
+}
+.clientes .controls > button .icon-plus{
+    margin-right: 10px;
+}
+.clientes .controls button:hover{
+    filter: brightness(.9);
+}
+.clientes .table table{
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 4px;
+    margin-top: 20px;
+    outline: none;
+}
+.clientes .table table tr{
+    height: 40px;
+    background-color: var(--white);
+}
+.clientes .table table th{
+    padding: 0 10px;
+    text-align: left;
+}
+.clientes .table table tr:nth-child(1){
+    background-color: var(--blue);
+    color: var(--cleanBlue);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.clientes .table table tr td{
+    padding: 0 10px;
+    font-size: 12px;
+    color:  var(--blue);
+    flex-wrap: nowrap;
+    font-weight: 600;
+}
+.clientes .table table tr td > div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.clientes .table table .to-do{
+    padding: 0 10px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--cleanBlue);
+    margin-right: 10px;
+}
+.clientes .table table .action{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cleanBlue);
+    color: var(--blue);
+    margin-right: 10px;
+    cursor: pointer;
+    transition: .2s;
+    border: none;
+    outline: none;
+}
+.clientes .table table .action:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}
+.clientes .table table tr{
+    transition: .2s;
+}
+.clientes .table table tr:hover{
+    filter: brightness(.9);
+}
+.clientes .table .pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.clientes .table .pagination button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--cleanBlue);
+    border: none;
+    font-weight: 800;
+    color: var(--blue);
+    margin: 0 2px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .2s;
+}
+.clientes .table .pagination button.active{
+    background-color: var(--blue);
+    color: var(--white);
+}
+.clientes .table .pagination button:hover{
+filter: brightness(.8);
+}
